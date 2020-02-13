@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <!--This script below allows the file to refer to jquery-->
         <script scr="http://ajax.googleapis.com
         /ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-        <!--Test push from Tal-->
-        <p>Chat Room for the ATCS Academy!</p>
-        <form class='username'>
-           <form class='entry'>
-              Username: <input type='text'
-              id='cipher-input' 
-              name='input'><br>
+        <header>
+            <h1>Chat Room for the ATCS Academy!</h1>
+            <form class='username'>
+                <form class='entry'>
+                   Username: <input type='text' id='username' name='input'><br>
+                <p id='username1'>Welcome User!</p>
+            
+                <div id='chatbox'></div>
+            
+            <form name='message' action=''>
+                <input name='usermsg' type='text' id='usermsg' size='69'>
+                <input name='submitmsg' type='submit' id='submitmsg' value='send'>
+            </form>
+        
+        </header>
     <script src='popup.js'></script>    
     </body>
 </html> 
