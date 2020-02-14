@@ -3,8 +3,20 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <!--This script below allows the file to refer to jquery-->
-        <script scr="http://ajax.googleapis.com
+        <script src="http://ajax.googleapis.com
         /ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script>
+        //     class Chat {
+        //     constructor() {
+        //         this.update = updateChat;
+        //         this.send = sendChat;
+        //         this.getState = getStateOfChat;
+        //     }
+        // }
+
+        // var chat = new Chat();
+        // console.log("HELLO")
+        </script> -->
     </head>
     <body>
         <header>
@@ -32,15 +44,8 @@
             </div>
         </a>
     <script src='popup.js'></script>  
-    <script scr="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-        class Chat {
-            constructor() {
-                this.update = updateChat;
-                this.send = sendChat;
-                this.getState = getStateOfChat;
-            }
-        }
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    
         var instance = false;
         var state;
         var file;
@@ -105,11 +110,11 @@
                 }
             });
         }
+        
+        setInterval(updateChat());
 
-
-        document.getElementById('send-message').addEventListener('click', chat.send())
+        document.getElementById('submitmsg').addEventListener('click', sendChat())
     </script>
-      <body onload="setInterval('chat.update()', 1000)"></body>
     </body>
     
 </html> 

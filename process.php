@@ -1,4 +1,5 @@
 <?php
+while(true) {
    $_POST['function'] = 'getState';
     $function = $_POST['function'];
     
@@ -50,4 +51,6 @@
          break;
     }
     echo json_encode($log);
+    usleep(10000000);
+   }
 ?>
