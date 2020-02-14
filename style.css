@@ -1,5 +1,5 @@
 body {
-    font: 12px comicsans; 
+    font: 14px comicsans; 
     color: #000;
     text-align: center;
     padding: 35px;
@@ -17,3 +17,17 @@ body {
     overflow:auto;
 }
 
+.fontsHere{
+    font-size: 24px;
+    font-family: "Verdana Header";
+}
+
+#username1{
+    font-family: "Verdana";
+    font-size: 12px;
+}
+
+#username{
+    font-family: "Verdana";
+    font-size: 12px;
+}
