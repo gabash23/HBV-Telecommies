@@ -6,7 +6,11 @@ function username (){
 let msgList = []
 
 function sendMessage (){
-
+    document.getElementById('messages').innerHTML = 'hentai';
+    /*
+    var currentText = document.getElementById('usermsg').value
+    msgList.push(currentText)
+    document.getElementById("messages")    */
 }
 
 
