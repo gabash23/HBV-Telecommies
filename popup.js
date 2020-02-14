@@ -1,6 +1,16 @@
-function username (){
+function username (event){
+    var form = document.getElementById("subUN");
+    function handleForm(event) { event.preventDefault(); } 
+    form.addEventListener('submit', handleForm);
+
     let newName = document.getElementById('username').value;
-    document.getElementById('username1').innerHTML='Welcome ' + newName + '!';
+    if (newName === '') {
+        
+    } else {
+        document.getElementById('username1').innerHTML='Welcome ' + newName + '!';
+        var element = document.getElementById('subUN')
+        element.parentNode.removeChild(element);
+    }
 }
 
 function callPy(data1) {
@@ -58,5 +68,5 @@ function sendMessage (event){
     document.getElementById('messages').innerHTML = newLine;
 }
 
-document.getElementById('username').addEventListener("input", username)
+document.getElementById('subUN').addEventListener("click", username)
 document.getElementById('submitmsg').addEventListener('click', sendMessage)
