@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #card {
     align-content: center;
     text-align: center;
@@ -47,3 +48,43 @@
   #heading3{
     font-family: 'Rubik', sans-serif;
   }
+=======
+body {
+    background-color: #282828;
+    font: 14px comicsans; 
+    color: rgb(19, 194, 252);
+    text-align: center;
+    padding: 35px;
+}
+
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:430px;
+    border:1px solid #ACD8F0;
+    overflow:auto;
+}
+
+.fontsHere{
+    font-size: 24px;
+    font-family: "Verdana Header";
+}
+
+#username1{
+    font-family: "Verdana";
+    font-size: 12px;
+}
+
+#username{
+    font-family: "Verdana";
+    font-size: 12px;
+}
+.submitmsg {
+    background-color: black;
+    color: rgb(19,194,252);
+}
+>>>>>>> 918145cc030de0204b29e1953fa5d1b3f6e9e766
