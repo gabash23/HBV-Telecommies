@@ -1,38 +1,49 @@
-body {
-    background-color: #282828;
-    font: 14px comicsans; 
-    color: rgb(19, 194, 252);
+#card {
+    align-content: center;
     text-align: center;
-    padding: 35px;
-}
-
-#chatbox {
-    text-align:left;
-    margin:0 auto;
-    margin-bottom:25px;
-    padding:10px;
-    background:#fff;
-    height:270px;
-    width:430px;
-    border:1px solid #ACD8F0;
-    overflow:auto;
-}
-
-.fontsHere{
-    font-size: 24px;
-    font-family: "Verdana Header";
-}
-
-#username1{
-    font-family: "Verdana";
-    font-size: 12px;
-}
-
-#username{
-    font-family: "Verdana";
-    font-size: 12px;
-}
-.submitmsg {
-    background-color: black;
-    color: rgb(19,194,252);
-}
+    width: 200px;
+    padding: 10px;
+  }
+  #img {
+    height: 100px;
+    width: 100px;
+  }
+  #switchrow{
+    display:inline-flex;
+  }
+  #sun{
+    height:34px;
+    padding:0px 9px;
+  }
+  #moon{
+    height:34px;
+    padding:0px 0px 0px 10px;
+  }
+  #title{
+    font-family: 'Rubik', sans-serif;
+    color: #A0F6FF;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    text-align: center;
+    background: #282828;
+    color: #A0F6FF;
+  }
+  #links {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  
+  .club:hover{
+    background:url(club.gif);
+  }
+  
+  #heading1{
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  #heading3{
+    font-family: 'Rubik', sans-serif;
+  }
