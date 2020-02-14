@@ -1,0 +1,23 @@
+#card {
+  align-content: center;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  border: solid black 10px;
+}
+#img {
+  height: 100px;
+  width: 100px;
+  border: solid black 5px;
+}
+#title {
+  border: solid black 5px;
+}
+body {
+  text-align: center;
+  
+}
+#links {
+  display: inline-flex;
+  flex-direction: row;
+}
