@@ -51,6 +51,6 @@ while(true) {
          break;
     }
     echo json_encode($log);
-    usleep(2000000);
+    usleep(10000000);
    }
 ?>
