@@ -33,5 +33,5 @@ function sendMessage (event){
     document.getElementById('usermsg').innerHTML='';
 }
 
-//document.getElementById('submitmsg').addEventListener('click', sendMessage)
+document.getElementById('submitmsg').addEventListener('click', sendMessage)
 document.getElementById('subUN').addEventListener("click", username)
