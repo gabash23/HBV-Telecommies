@@ -9,8 +9,6 @@
        case('getState'):
            if (file_exists('chat.txt')) {
                $lines = file('chat.txt');
-           } else {
-              $lines = array();
            }
            $log['state'] = count($lines); 
            break;  
