@@ -1,6 +1,7 @@
 body {
+    background-color: #282828;
     font: 14px comicsans; 
-    color: #000;
+    color: rgb(19, 194, 252);
     text-align: center;
     padding: 35px;
 }
@@ -30,4 +31,8 @@ body {
 #username{
     font-family: "Verdana";
     font-size: 12px;
+}
+.submitmsg {
+    background-color: black;
+    color: rgb(19,194,252);
 }
