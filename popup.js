@@ -7,12 +7,14 @@ function username (event){
     if (newName === '') {
         
     } else {
-        document.getElementById('username1').innerHTML='Welcome ' + newName + '!';
+        document.getElementById('username1').innerHTML='Welcome ' + newName.fontcolor(randomcolor) + '!';
         var element = document.getElementById('subUN')
         element.parentNode.removeChild(element);
     }
 }
 
+var usercolors = ["Red", "Blue", "Fuchsia", "Aqua", "Coral", "DarkOrchid", "DarkOrange", "Cornsilk", "Yellow", "SlateBlue", "Plum"]
+var randomcolor = usercolors[Math.floor(Math.random() * usercolors.length)]; 
 var msgList = []
 
 function sendMessage (event){
@@ -25,11 +27,7 @@ function sendMessage (event){
     let newmsg = document.getElementById('usermsg').value;
     var today = new Date();
     var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-<<<<<<< HEAD
-    msgList.push(username + (' ('+time+')').fontcolor("Gray") + ' : ' + newmsg);
-=======
-    msgList.push(username + (' ('+time+')').fontcolor('grey') + ' : ' + newmsg);
->>>>>>> 4db0e1aaf27f0ee0aa5f3ebbfa63d4263045c44a
+    msgList.push(username.fontcolor(randomcolor) + (' ('+time+')').fontcolor('Lime') + ' : ' + newmsg);
     var newLine = msgList.join('<br>')
     document.getElementById('messages').innerHTML = newLine;
     document.getElementById('usermsg').innerHTML='';
