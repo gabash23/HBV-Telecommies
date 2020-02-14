@@ -58,3 +58,13 @@ p {
 }
 .username {
 }
+
+a {
+     text-align: left;
+     padding: 0px;
+     width: 120px;
+}
+img {
+    height: 100px;
+    width: 120px;
+}
