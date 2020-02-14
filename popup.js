@@ -23,9 +23,12 @@ function sendMessage (event){
 
     let username = document.getElementById('username').value;
     let newmsg = document.getElementById('usermsg').value;
-    msgList.push(username + ' : ' + newmsg);
+    var today = new Date();
+    var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+    msgList.push(username + ' ('+time+')' + ' : ' + newmsg);
     var newLine = msgList.join('<br>')
     document.getElementById('messages').innerHTML = newLine;
+    document.getElementById('usermsg').innerHTML='';
 }
 
 document.getElementById('subUN').addEventListener("click", username)
