@@ -1,3 +1,4 @@
+/*
 class Chat {
 	constructor() {
 		this.update = updateChat;
@@ -70,3 +71,4 @@ function sendChat() {
 	});
 }
 
+*/
