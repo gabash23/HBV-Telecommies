@@ -1,5 +1,5 @@
 <?php
-while(true) {
+//while(true) {
    $_POST['function'] = 'getState';
     $function = $_POST['function'];
     
@@ -14,6 +14,7 @@ while(true) {
               $lines = array();
            }
            $log['state'] = count($lines); 
+           echo json_encode($log);
            break;  
       
        case('update'):
@@ -35,8 +36,9 @@ while(true) {
              }
              $log['text'] = $text; 
           }
-            
-          break;
+          echo json_encode($log);
+         break;
+         
        
        case('send'):
        	 $nickname = htmlentities(strip_tags($_POST['nickname']));
@@ -47,10 +49,10 @@ while(true) {
 	          $message = preg_replace($reg_exUrl, '<a href="'.$url[0].'" target="_blank">'.$url[0].'</a>', $message);
 	       } 
 	          fwrite(fopen('chat.txt', 'a'), "<span>". $nickname . "</span>" . $message = str_replace("\n", " ", $message) . "\n"); 
-	     }
+        }
+        echo json_encode($log);
          break;
     }
     echo json_encode($log);
-    usleep(10000000);
-   }
+    //usleep(10000000);
 ?>
