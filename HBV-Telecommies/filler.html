@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--This script below allows the file to refer to jquery-->
+        <script scr="http://ajax.googleapis.com
+        /ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Chat Room for the ATCS Academy!</h1>
+            <form class='username'>
+                <form class='entry'>
+                   Username: <input type='text' id='username' name='input'>
+                   <button id='subUN' type='button'>Submit</button>
+                <p id='username1'>Welcome User!</p>
+                    
+                <div id='chatbox'>
+                    <!--<p id='messages'>No new messages :(</p>-->
+                    <p id='messages'></p>
+                    <script src = "popup.js"></script>
+                </div>
+            
+            <form name='message' action=''>
+                <input name='usermsg' type='text' id='usermsg' size='69'>
+                <button id='submitmsg' value='send'>Send</button>
+            </form>
+        
+        </header>
+    <script src='popup.js'></script>  
+    <script src='chat.js'>
+        document.getElementById('send-message').addEventListener('click', chat.send())
+    </script>
+      <body onload="setInterval('chat.update()', 1000)"></body>
+    </body>
+    
+</html> 
