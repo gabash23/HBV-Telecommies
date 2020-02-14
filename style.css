@@ -56,3 +56,15 @@ button {
 p {
     font-size: 16;
 }
+.username {
+}
+
+a {
+     text-align: left;
+     padding: 0px;
+     width: 120px;
+}
+img {
+    height: 100px;
+    width: 120px;
+}
