@@ -10,13 +10,14 @@ function sendMessage (event){
     var form = document.getElementById("submitmsg");
     function handleForm(event) { event.preventDefault(); } 
     form.addEventListener('submit', handleForm);
-    console.log("test");
-    document.getElementById('messages').innerHTML = 'hentai';
-    /*
-    var currentText = document.getElementById('usermsg').value
-    msgList.push(currentText)
-    document.getElementById("messages")    */
+    
+    let username = document.getElementById('username').value;
+    let newmsg = document.getElementById('usermsg').value;
+    msgList.push(newmsg);
+    document.getElementById('messages').innerHTML = '\n' + username + ' : ' + msgList;
+    
 }
 
 document.getElementById('username').addEventListener("input", username)
 document.getElementById('submitmsg').addEventListener('click', sendMessage)
+2
