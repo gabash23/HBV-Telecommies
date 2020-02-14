@@ -5,6 +5,18 @@
         <!--This script below allows the file to refer to jquery-->
         <script scr="http://ajax.googleapis.com
         /ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script>
+        //     class Chat {
+        //     constructor() {
+        //         this.update = updateChat;
+        //         this.send = sendChat;
+        //         this.getState = getStateOfChat;
+        //     }
+        // }
+
+        // var chat = new Chat();
+        // console.log("HELLO")
+        </script> -->
     </head>
     <body>
         <header>
@@ -33,16 +45,7 @@
         </a>
     <script src='popup.js'></script>  
     <script scr="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-        class Chat {
-            constructor() {
-                this.update = updateChat;
-                this.send = sendChat;
-                this.getState = getStateOfChat;
-            }
-        }
-
-        var chat = new Chat();
-
+    
         var instance = false;
         var state;
         var file;
@@ -108,9 +111,9 @@
             });
         }
         
-        setInterval(chat.update());
+        setInterval(updateChat());
 
-        document.getElementById('submitmsg').addEventListener('click', chat.send())
+        document.getElementById('submitmsg').addEventListener('click', sendChat())
     </script>
     </body>
     
