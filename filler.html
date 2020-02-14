@@ -27,6 +27,11 @@
             </form>
         
         </header>
-    <script src='popup.js'></script>    
+    <script src='popup.js'></script>  
+    <script src='chat.js'>
+        document.getElementById('send-message').addEventListener('click', chat.send())
+    </script>
+      <body onload="setInterval('chat.update()', 1000)"></body>
     </body>
+    
 </html> 

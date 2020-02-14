@@ -3,7 +3,7 @@ body {
     font: 20px comicsans; 
     color: rgb(19, 225, 252);
     text-align: center;
-    padding: 35px;
+    padding: 45px;
 }
 
 #chatbox {
@@ -27,7 +27,7 @@ body {
 
 #username1{
     font-family: "Verdana";
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #username{
@@ -40,14 +40,21 @@ body {
 }
 input {
     background-color: black;
-    border:3px solid rgb(25, 136, 184);
+    border:4px solid rgb(25, 136, 184);
     color: rgb(0, 247, 255);
+    height: 16px;
+    width: 417px;
+
 }
 button {
     background-color: black;
     border:3px solid rgb(25, 136, 184);
-    color: rgb(0, 247, 255);   
+    color: rgb(0, 247, 255); 
+    height: 26px;  
+    font-size: 15px;
 }
 p {
     font-size: 16;
+}
+.username {
 }
