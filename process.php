@@ -14,7 +14,7 @@
               $lines = array();
            }
            $log['state'] = count($lines); 
-           echo json_encode("getState" + $log);
+           echo json_encode("getState" . $log);
            break;  
       
        case('update'):
@@ -36,7 +36,7 @@
              }
              $log['text'] = $text; 
           }
-          echo json_encode("update" + $log);
+          echo json_encode("update" . $log);
          break;
 
        
