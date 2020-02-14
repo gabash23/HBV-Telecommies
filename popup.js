@@ -2,10 +2,10 @@ function username (event){
     var form = document.getElementById("subUN");
     function handleForm(event) { event.preventDefault(); } 
     form.addEventListener('submit', handleForm);
-
+    
     let newName = document.getElementById('username').value;
     if (newName === '') {
-        
+            
     } else {
         document.getElementById('username1').innerHTML='Welcome ' + (newName).fontcolor(randomcolor) + '!';
         var element = document.getElementById('subUN')
