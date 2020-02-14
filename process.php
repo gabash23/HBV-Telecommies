@@ -1,5 +1,5 @@
 <?php
-
+   $_POST['function'] = 'getState';
     $function = $_POST['function'];
     
     $log = array();
