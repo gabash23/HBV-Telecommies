@@ -13,11 +13,10 @@ function sendMessage (event){
     
     let username = document.getElementById('username').value;
     let newmsg = document.getElementById('usermsg').value;
-    msgList.push(newmsg);
-    document.getElementById('messages').innerHTML = '\n' + username + ' : ' + msgList;
-    
+    msgList.push(username + ' : ' + newmsg);
+    var newLine = msgList.join('<br>')
+    document.getElementById('messages').innerHTML = newLine;
 }
 
 document.getElementById('username').addEventListener("input", username)
 document.getElementById('submitmsg').addEventListener('click', sendMessage)
-2
