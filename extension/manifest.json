@@ -1,0 +1,17 @@
+{
+    "name": "BcarV2",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "description": "This is the chrome extension made by Tal Ledeniov that opens up a BCAr webpage",
+
+
+    "browser_action": {
+        "default_title": "BCAr2",
+        "default_popup": "popupup.html"
+    },
+
+    "permissions": [
+        "http://*/*", "https://*/*"
+    ] 
+}
