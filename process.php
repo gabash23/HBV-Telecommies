@@ -14,7 +14,7 @@
               $lines = array();
            }
            $log['state'] = count($lines); 
-           echo json_encode($log);
+           echo json_encode("getState" + $log);
            break;  
       
        case('update'):
@@ -36,9 +36,9 @@
              }
              $log['text'] = $text; 
           }
-          echo json_encode($log);
+          echo json_encode("update" + $log);
          break;
-         
+
        
        case('send'):
        	 $nickname = htmlentities(strip_tags($_POST['nickname']));
@@ -50,9 +50,9 @@
 	       } 
 	          fwrite(fopen('chat.txt', 'a'), "<span>". $nickname . "</span>" . $message = str_replace("\n", " ", $message) . "\n"); 
         }
-        echo json_encode($log);
+        echo json_encode("send" + $log);
          break;
     }
-    echo json_encode($log);
+    echo json_encode("end" + $log);
     //usleep(10000000);
 ?>
