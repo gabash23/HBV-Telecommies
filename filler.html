@@ -102,9 +102,9 @@
         }
 
 
-        document.getElementById('send-message').addEventListener('click', chat.send())
+        document.getElementById('submitmsg').addEventListener('click', chat.send())
+        setInterval('chat.update()');
     </script>
-      <body onload="setInterval('chat.update()', 1000)"></body>
     </body>
     
 </html> 
