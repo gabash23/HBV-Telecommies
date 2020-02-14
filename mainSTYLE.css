@@ -36,10 +36,6 @@ body {
   flex-direction: row;
 }
 
-.club:hover{
-  background:url(club.gif);
-}
-
 #heading1{
   font-family: 'Rubik', sans-serif;
 }
