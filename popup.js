@@ -25,7 +25,7 @@ function sendMessage (event){
     let newmsg = document.getElementById('usermsg').value;
     var today = new Date();
     var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-    msgList.push(username + ' ('+time+')' + ' : ' + newmsg);
+    msgList.push(username + (' ('+time+')').fontcolor('grey') + ' : ' + newmsg);
     var newLine = msgList.join('<br>')
     document.getElementById('messages').innerHTML = newLine;
     document.getElementById('usermsg').innerHTML='';
